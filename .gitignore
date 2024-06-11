@@ -6,3 +6,7 @@
 *.jar
 *.war
 *.ear
+**/.gradle
+**/*.lock
+**/build
+**/target
