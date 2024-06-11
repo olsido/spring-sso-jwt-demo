@@ -5,7 +5,9 @@
         <title>Hello World!</title>
     </head>
     <body>
-        <h1 th:inline="text">Hello <span th:remove="tag" sec:authentication="name">thymeleaf</span>!</h1>
+        <h1 th:inline="text">Hello <span th:remove="tag" sec:authentication="name">thymeleaf</span> from app1!</h1>
+        <p><a href="http://localhost:8081">Link to app2 - unauthenticated</a></p>
+        <p><a href="http://localhost:8081">Link to app2 - authenticated</a></p>
         <form th:action="@{/logout}" method="post">
             <input type="submit" value="Sign Out"/>
         </form>
