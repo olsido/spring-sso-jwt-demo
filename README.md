@@ -5,7 +5,7 @@ This repository contains a demo project that demonstrates how to implement Singl
 ## Overview
 
 The project consists of two Spring Boot applications:
-- **App1**: Handles user authentication with a username and password, generates a JWT token upon successful login, and provides a link to redirect to App2 with the JWT token.
+- **App1**: Handles user authentication with a username and password, and provides a link to redirect to App2 with the JWT token generated when the link is clicked.
 - **App2**: Accepts the JWT token, verifies it, and establishes a session for the user without requiring re-authentication.
 
 Please note that the username and password for both apps is user / password.
@@ -26,7 +26,7 @@ Please note that the username and password for both apps is user / password.
 
 1. **Clone the Repository**:
    ```sh
-   git clone https://github.com/yourusername/spring-sso-jwt-demo.git
+   git clone https://github.com/olsido/spring-sso-jwt-demo.git
    cd spring-sso-jwt-demo
    
 2. **Build and Run App1:**
@@ -41,7 +41,7 @@ Please note that the username and password for both apps is user / password.
 
 4. **Testing the SSO:**
 - Open your browser and navigate to App1.
-- Log in with the provided credentials.
+- Log in with the provided credentials (user / password).
 - Click the link to navigate to App2.
 - You should be logged in to App2 without re-entering your credentials.
 
