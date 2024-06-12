@@ -8,6 +8,8 @@ The project consists of two Spring Boot applications:
 - **App1**: Handles user authentication with a username and password, generates a JWT token upon successful login, and provides a link to redirect to App2 with the JWT token.
 - **App2**: Accepts the JWT token, verifies it, and establishes a session for the user without requiring re-authentication.
 
+Please note that the username and password for both apps is user / password.
+
 ## Features
 
 - Secure user authentication using Spring Security
